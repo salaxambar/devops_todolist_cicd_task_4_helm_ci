@@ -100,7 +100,7 @@ jobs:
         name: helm-artifacts
         path: .
     - name: Template Helm
-      run: helm template todoapp ./todoapp/ -f /todoapp/values.yaml
+      run: helm template todoapp ./todoapp/ -f ./todoapp/values.yaml
     - name: Lint Helm
       run: helm lint ./todoapp/
     - name: Package Helm
